@@ -117,18 +117,11 @@ void buscarElemento()
 		for (int n = 0; n < nElementos; n++) {
 			if (busca == lista[n]) {
 				nEncontrados++;
+				cout << "O elemento foi encontrado na posicao " << n << endl;
 			}
 		}
 
-		if (nEncontrados != 0) {
-			cout << "O elemento foi encontrado na(s) posicao(oes): \n";
-			for (int n = 0; n < nElementos; n++) {
-				if (busca == lista[n]) {
-					cout << n << endl;
-				}
-			}
-		}
-		else {
+		if (nEncontrados == 0) {
 			cout << "O elemento nao esta na lista \n";
 		}
 	}
